@@ -15,7 +15,7 @@ Ce projet est une application web complète (Frontend React + Backend Node.js) d
 ### 🤖 Assistance IA (Google Gemini)
 *   **Analyse de risques :** Évaluation automatique des menaces pour les sites sensibles.
 *   **Génération de Fiches Réflexes :** Création instantanée de checklists opérationnelles adaptées au type de crise et au lieu.
-*   **Appui à la décision :** Suggestions de répartition des moyens.
+
 
 ### 🚨 Gestion de Crise
 *   **Main Courante électronique :** Journalisation horodatée des événements et décisions.
