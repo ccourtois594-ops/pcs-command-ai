@@ -1,0 +1,5 @@
+{
+  "name": "PCS Command AI",
+  "description": "Système de gestion de Plan Communal de Sauvegarde assisté par IA. Cartographie des risques, annuaire des moyens et gestion de crise.",
+  "requestFramePermissions": []
+}

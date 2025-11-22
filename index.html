@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PCS Command AI</title>
+    <!-- Tailwind CSS (Via CDN pour simplifier l'installation sans build process complexe CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Leaflet Draw CSS & JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+    <!-- HTML2PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #1e293b; }
+      ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+      
+      /* Leaflet Customization for Dark Theme */
+      .leaflet-container { background: #0f172a; }
+      .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+        background: #1e293b;
+        color: #e2e8f0;
+        border: 1px solid #334155;
+      }
+      .leaflet-popup-close-button { color: #94a3b8 !important; }
+
+      /* Custom Layer Control Styles */
+      .leaflet-control-layers {
+        background: #1e293b !important;
+        border: 1px solid #334155 !important;
+        color: #e2e8f0 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+      }
+      .leaflet-control-layers-expanded {
+          padding: 10px !important;
+      }
+      .leaflet-control-layers-separator {
+          border-top: 1px solid #334155 !important;
+      }
+      .leaflet-control-layers label {
+          margin-bottom: 4px;
+          font-size: 0.8rem;
+          font-weight: 500;
+      }
+
+      /* Leaflet Draw Customization */
+      .leaflet-draw-toolbar a {
+        background-color: #1e293b !important;
+        border-color: #334155 !important;
+        color: #e2e8f0 !important;
+      }
+      .leaflet-draw-toolbar a:hover {
+        background-color: #334155 !important;
+      }
+      .leaflet-draw-actions {
+        background-color: #1e293b !important;
+      }
+      .leaflet-draw-actions li a {
+        background-color: #334155 !important;
+        color: #e2e8f0 !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "@phosphor-icons/react": "https://aistudiocdn.com/@phosphor-icons/react@^2.1.10",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "fs/": "https://aistudiocdn.com/fs@^0.0.1-security/",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
