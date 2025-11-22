@@ -2,7 +2,7 @@
 
 **Système de Gestion de Plan Communal de Sauvegarde (PCS) assisté par Intelligence Artificielle.**
 
-Ce projet est une application web complète (Frontend React + Backend Node.js) destinée aux cellules de crise municipales. Elle permet de centraliser les informations, de cartographier les risques et les moyens, et d'assister le Directeur des Opérations de Secours (DOS) grâce à l'IA générative Google Gemini.
+Ce projet est une application web complète (Frontend React + Backend Node.js) destinée aux cellules de crise municipales. Elle permet de centraliser les informations, de cartographier les risques et les moyens, et d'assister le Directeur des Opérations de Secours (DOS) grâce à l'IA générative Google Gemini.Entierement réalisée sur google studio avec Gemini 3.
 
 ## 🚀 Fonctionnalités Principales
 
